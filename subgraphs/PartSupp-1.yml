@@ -1,0 +1,10 @@
+fileVersion: 1
+id: "1"
+name: PartSupp
+steps:
+  - 18b8d3a3-ac25-4f64-a969-4287524edf57
+  - 262dfa50-e713-40b7-acda-adf6c2e7f8a3
+  - 6b97be34-2446-43f0-85db-6b2c76883ce0
+  - 8e12eaaf-4410-47eb-b3a7-e3e88a5941bc
+  - 974d12ce-795f-4fce-ae1c-8164652c4abf
+type: Subgraph

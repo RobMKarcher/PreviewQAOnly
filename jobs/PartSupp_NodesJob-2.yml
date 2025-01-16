@@ -1,0 +1,6 @@
+excludeSelector: ""
+fileVersion: 1
+id: "2"
+includeSelector: "{ location: SAMPLE name: PARTSUPP } OR { location: WORK name: STG_PARTSUPP } OR { location: WORK name: STG_PARTSUPP1 } OR { location: WORK name: STG_PARTSUPP2 } OR { location: WORK name: STG_PARTSUPP3 }"
+name: PartSupp_NodesJob
+type: Job

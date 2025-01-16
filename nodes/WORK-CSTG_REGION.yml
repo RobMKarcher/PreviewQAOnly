@@ -1,0 +1,81 @@
+fileVersion: 1
+id: 67026188-4995-4385-af2a-91ded0e0dd88
+name: CSTG_REGION
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: WORK
+  materializationType: somethingelseentirely
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 366464a8-c969-4b78-abe5-df1ebc341dc5
+          stepCounter: 67026188-4995-4385-af2a-91ded0e0dd88
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: R_REGIONKEY
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 35875fd6-d1af-4200-8d01-f7c04d14a8bb
+                stepCounter: 7e57d6d3-bfac-444b-8d1c-9db0422ed7f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ec8c054c-18dc-4feb-b85a-d2846aae59d6
+          stepCounter: 67026188-4995-4385-af2a-91ded0e0dd88
+        config: {}
+        dataType: VARCHAR(25)
+        description: ""
+        name: R_NAME
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 024e4acd-515d-4b62-86d2-499e8a883924
+                stepCounter: 7e57d6d3-bfac-444b-8d1c-9db0422ed7f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1e499bf0-adf4-439c-bd7b-4c63cb1e5b92
+          stepCounter: 67026188-4995-4385-af2a-91ded0e0dd88
+        config: {}
+        dataType: VARCHAR(152)
+        description: ""
+        name: R_COMMENT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: fedb72ba-cd03-437b-af62-99b52022f518
+                stepCounter: 7e57d6d3-bfac-444b-8d1c-9db0422ed7f5
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: WORK
+            nodeName: STG_REGION
+        join:
+          joinCondition: FROM {{ ref('WORK', 'STG_REGION') }} "STG_REGION"
+        name: CSTG_REGION
+        noLinkRefs: []
+  name: CSTG_REGION
+  overrideSQL: false
+  schema: ""
+  sqlType: "1"
+  type: sql
+  version: 1
+type: Node

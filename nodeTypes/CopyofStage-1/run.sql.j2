@@ -1,5 +1,4 @@
-
-    {% for test in node.tests if config.testsEnabled %}
+{% for test in node.tests if config.testsEnabled %}
         {% if test.runOrder == 'Before' %}
             {{ test_stage(test.name, test.continueOnFailure) }}
             {{ test.templateString }}
@@ -82,4 +81,15 @@
 			{{ test.templateString }}
 		{% endfor %}
 	{% endfor %}
+{% endif %}
+
+{% if node.materializationType == 'table' %}
+	{% if config.warehouse %}
+		{{stage('Use Warehouse')}}
+		use warehouse "{{config.warehouse}}"
+{% endif %}
+{% if config.preSQL %}
+	{{ stage('Pre-SQL') }}
+	{{ config.preSQL }}
+{% endif %}
 {% endif %}

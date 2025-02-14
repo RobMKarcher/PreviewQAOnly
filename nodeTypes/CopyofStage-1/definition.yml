@@ -13,6 +13,11 @@ metadata:
     config:
       - groupName: Options
         items:
+          - displayName: Warehouse
+            attributeName: warehouse
+            type: textBox
+            syntax: sql
+            isRequired: false
           - type: materializationSelector
             default: somethingelseentirely
             options:

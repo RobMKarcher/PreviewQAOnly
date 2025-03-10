@@ -146,6 +146,23 @@ operation:
               - columnCounter: 4693af0d-4a88-40cd-8920-97275f600943
                 stepCounter: 76e47431-a6f5-44e8-a615-b2179bf73bc2
             transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: fb55a582-5f0d-4ae2-ba29-45d705473b3f
+          stepCounter: 53e0b8c4-9e0a-4255-87c9-eb8b7ca7f3ea
+        config: {}
+        dataType: STRING
+        defaultValue: ""
+        description: ""
+        hashDetails:
+          hashAlgorithm: SHA1
+        hashedColumns: []
+        name: GH
+        nullable: true
+        sourceColumnReferences: []
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:

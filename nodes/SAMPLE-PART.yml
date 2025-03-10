@@ -3,7 +3,6 @@ id: 3023af1a-564e-4719-adc4-4d2c78806454
 name: PART
 operation:
   database: ""
-  dataset: ""
   deployEnabled: true
   description: ""
   locationName: SAMPLE
@@ -180,12 +179,9 @@ operation:
             transform: ""
         transform: ""
         uniqueKey: false
-    join:
-      joinCondition: FROM {{ ref('SAMPLE', 'PART') }}
   name: PART
   schema: ""
   sqlType: Source
-  table: PART
   type: sourceInput
   version: 1
 type: Node

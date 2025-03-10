@@ -3,7 +3,6 @@ id: 6aa846eb-3349-4a42-ac1a-2602a325aeec
 name: REGION
 operation:
   database: ""
-  dataset: ""
   deployEnabled: true
   description: ""
   locationName: SAMPLE
@@ -66,12 +65,9 @@ operation:
             transform: ""
         transform: ""
         uniqueKey: false
-    join:
-      joinCondition: FROM {{ ref('SAMPLE', 'REGION') }}
   name: REGION
   schema: ""
   sqlType: Source
-  table: REGION
   type: sourceInput
   version: 1
 type: Node

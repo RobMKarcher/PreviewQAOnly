@@ -129,6 +129,27 @@ operation:
               - columnCounter: 30f04acc-5523-4d20-8abb-6b72005994a3
                 stepCounter: 5290b83c-79fe-44fc-a50e-9bf4ea8b3d9f
             transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 98b9e644-9140-4227-824a-c80266e0ac1e
+          stepCounter: 66261a6a-a1c3-4842-b52a-da1548c5b499
+        config: {}
+        dataType: STRING
+        defaultValue: ""
+        description: ""
+        hashDetails:
+          hashAlgorithm: SHA1
+        hashedColumns:
+          - columnCounter: 3ba6c446-5681-4aa7-b992-e789fc51f376
+            stepCounter: 66261a6a-a1c3-4842-b52a-da1548c5b499
+          - columnCounter: 3ec349ac-61a7-4869-b5d8-e29a78a1cc59
+            stepCounter: 66261a6a-a1c3-4842-b52a-da1548c5b499
+        name: GH
+        nullable: true
+        sourceColumnReferences: []
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:
